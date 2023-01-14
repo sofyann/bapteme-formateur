@@ -23,7 +23,7 @@ Je te propose quelques petites améliorations :
 
 La première amélioration concerne la requête SQL que tu as faite :
 
-![img_10.png](img_10.png)
+![img_10.png](./imagesFeedbacks/img_10.png)
 
 J'ai pu voir que tu n'avais pas utilisé de requête préparée, mais que tu avais plutôt fait une concaténation pour insérer l'id dans la requête.
 
@@ -52,7 +52,7 @@ Ensuite, on a juste à transmettre les différentes variables en plus de la requ
 
 Je t'invite à voir la requête réalisée dans la correction pour avoir un exemple plus concret comment utiliser une requête préparée :
 
-![img_11.png](img_11.png)
+![img_11.png](./imagesFeedbacks/img_11.png)
 
 Comme tu peux le voir on construit la requête en lui indiquant le paramètre `$1` et en lui passant la variable `cardId` séparément.
 
@@ -69,7 +69,7 @@ Dans le cas où la ressource n'est pas trouvé, on doit le contrôler pour perme
 
 Pour voir comment gérer ce type d'erreurs je t'invite à voir la correction : 
 
-![img_12.png](img_12.png)
+![img_12.png](./imagesFeedbacks/img_12.png)
 
 Comme tu peux le voir, si la carte existe, on passe les informations à la vue.
 
@@ -80,13 +80,13 @@ Dans le cas où la carte n'existe pas on entre dans le `else` et on retourne un 
 
 La troisième petite amélioration que je te propose ici, c'est sur le nom de la fonction `item` dans le controller.
 
-![img_13.png](img_13.png)
+![img_13.png](./imagesFeedbacks/img_13.png)
 
 Je te recommande de donner un nom plus précis à ta fonction pour pouvoir t'y retrouver plus facilement.
 
-Comme par exemple dans la correction, nous avons appelé la fonction `cardDetails` :
+Par exemple dans la correction, nous avons appelé la fonction `cardDetails` :
 
-![img_14.png](img_14.png)
+![img_14.png](./imagesFeedbacks/img_14.png)
 
 ---
 ## Etape 2 : Recherche
@@ -95,17 +95,17 @@ Ici j'ai vu que tu as créé une nouvelle fonction dans le controller `searchCon
 
 J'ai pu voir que tu récupérais toutes les cartes grâce à la fonction `getElements()` de ton dataMapper et ensuite tu les filtres grâce à la fonction JavaScript `filter()` sur ton tableau de cartes :
 
-![img_15.png](img_15.png)
+![img_15.png](./imagesFeedbacks/img_15.png)
 
 Dans la correction, on effectue le "filtre", directement via notre requête SQL grâce à une clause WHERE :
 
-![img_16.png](img_16.png)
+![img_16.png](./imagesFeedbacks/img_16.png)
 
 Comme tu peux le voir, ici on construit notre requête préparée en fonction de si l'élément est NULL (c'est-à-dire qu'on que la carte n'a aucun élément) ou s'il y a une autre valeur.
 
 Le résultat de la requête sera déjà **filtré** grâce à notre clause **WHERE**, ainsi on aura donc toutes les cartes que l'on souhaite et il n'est pas nécessaire d'effectuer un filtre en javascript. Comme tu peux le voir dans le controller de la correction :
 
-![img_17.png](img_17.png)
+![img_17.png](./imagesFeedbacks/img_17.png)
 
 Pourquoi effectuer le filtre directement via la requête ? Et bien pour plusieurs raisons :
 
@@ -123,11 +123,11 @@ Tu as bien activé les sessions avec `express-session`, bien joué ! 👌
 
 Il y a une petite amélioration que tu pourrais apporter lors de la configuration d'express-session.
 Plus particulièrement concernant le secret :
-![img_18.png](img_18.png)
+![img_18.png](./imagesFeedbacks/img_18.png)
 
 Comme tu peux le voir dans la correction, on n'écrit pas directement le **"secret"** en dure :
 
-![img_19.png](img_19.png)
+![img_19.png](./imagesFeedbacks/img_19.png)
 
 Je t'invite à voir la correction notamment le fichier `.envexample` pour voir comment mettre en place la variable `SESSION_SECRET`.
 
@@ -135,13 +135,13 @@ Je t'invite à voir la correction notamment le fichier `.envexample` pour voir c
 
 Alors j'ai pu voir que tu vérifies bien les cartes déjà présentes pour t'assurer de ne pas avoir de doublons, bien joué !
 
-![img_20.png](img_20.png)
+![img_20.png](./imagesFeedbacks/img_20.png)
 
 Il manque un tout petit bout de code pour ne pas ajouter de carte si le deck en contient déjà 5.
 
 Comme tu peux le voir dans la correction, on ajoute une condition supplémentaire où on vérifie tout simplement s'il n'y a pas déjà 5 cartes dans le deck :
 
-![img_21.png](img_21.png)
+![img_21.png](./imagesFeedbacks/img_21.png)
 
 Si tu veux aller plus loin je t'invite à lire la correction pour voir comment optimiser encore plus cette vérification.
 
