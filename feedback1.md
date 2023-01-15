@@ -32,7 +32,7 @@ On retrouve aussi toutes les informations d'une carte, bravo à toi ! 👏
 
 Ton code aussi est très propre, que ce soit la route, le controller, la requête SQL ou la views.
 
-Comme je vois que les différents concepts sont bien assimilés, je te propose deux petites améliorations de code que tu pourrais prendre en compte dans le futur.
+Comme je vois que les différents concepts sont bien assimilés, je te propose deux petites améliorations de code que tu pourras prendre en compte dans le futur.
 
 ### Amélioration 1
 
@@ -71,6 +71,8 @@ A la place, en cas d'erreurs internes, tu pourrais tout simplement envoyer un me
 ## Etape 2 : Recherche
 Tu as encore une fois un controller avec une fonction par formulaire de recherche, c'est une très bonne chose !
 Le code de ta fonction `searchByElement()` ainsi que la requête SQL me semblent pas mal aussi. Bien joué ! 👏
+
+Attention toutefois à bien déclarer tes variables avec `let` ou `const` si tu ne comptes pas modifier la valeur.
 
 ---
 ## Etape 3 : Construire un deck

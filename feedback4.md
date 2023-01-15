@@ -1,13 +1,10 @@
 # Feedback pour le parcours Triple Triad
 
-> Il est difficile pour moi de t'apporter un feedback adapté au vu du travail fournit. 
-> Je ne peux pas savoir à ce stade s'il s'agit d'une incompréhension globale ou si tu as rencontré des problèmes spécifiques qui ton empêché de réaliser l'exercice.
-> J'ai vu que tu avais commencé l'étape 1 du challenge, je te propose ici de la finaliser ensemble pour t'apporter une explication sur la façon dont tu aurais pu procéder.
-> Je t'invite ensuite à prendre le temps de voir la correction fournit et de refaire le challenge à tête reposé pour t'exercer.
+> Il est difficile pour moi de t'apporter un feedback adapté au vu du travail fourni. 
+> Je ne peux pas savoir à ce stade s'il s'agit d'une incompréhension globale ou si tu as rencontré des problèmes spécifiques qui t'ont empêché de réaliser l'exercice.
+> J'ai vu que tu as commencé l'étape 1 du challenge, je te propose ici de la finaliser ensemble pour t'apporter une explication sur la façon dont tu aurais pu procéder.
+> Je t'invite ensuite à prendre le temps de voir la correction fourni et de refaire le challenge à tête reposé pour t'exercer.
 > Et si tu as besoin d'aide, je suis là !
-
-
-J'ai vu que tu as commencé la première étape concernant la page de détails d'une carte.
 
 
 Alors j'ai vu que tu avais commencé par créer une fonction `cardPage` dans le controller `mainController.js` ainsi que la fonction `getCard(id)`
@@ -77,13 +74,13 @@ Alors, il y a une petite erreur dans ta condition qui suit la requête :
 
 ![img_49.png](./imagesFeedbacks/img_49.png)
 
-Tu utilises une variable **resultQuery** qui n'existe pas, j'imagine que tu voulais utiliser **queryResult**, je te propose de la remplacer :
+Tu utilises une variable **resultQuery** qui n'existe pas, j'imagine que tu voulais utiliser **queryResult**, je te propose de la remplacer.
 
 Maintenant retournons dans notre controller pour utiliser convenablement la fonction `getCard()`, où on va simplement lui transmettre notre constante **cardId** :
 
 ![img_50.png](./imagesFeedbacks/img_50.png)
 
-Ensuite, dans notre controller on a encore une petite étape, transmettre le résultat de notre fonction (les données de notre carte) à notre view pour pouvoir l'afficher :
+Ensuite, dans notre controller on a encore une petite étape : transmettre le résultat de notre fonction (les données de notre carte) à notre view pour pouvoir l'afficher :
 
 ![img_51.png](./imagesFeedbacks/img_51.png)
 
@@ -109,4 +106,4 @@ Et ... TADAM ! Notre page de détails prend vie :
 
 ![img_54.png](./imagesFeedbacks/img_54.png)
 
-Voilà, c'est tout ce qui était attendu pour l'étape 1 du challenge, j'espère que mon petit guide te sera utile pour les prochaines challenges.
+Voilà, c'est tout ce qui était attendu pour l'étape 1 du challenge, j'espère que mon petit guide te sera utile pour les prochains challenges.

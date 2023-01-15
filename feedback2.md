@@ -50,7 +50,7 @@ On peut donc remplacer `${id}` par `$1` dans la requête.
 Ensuite, on a juste à transmettre les différentes variables en plus de la requête.
 </details>
 
-Je t'invite à voir la requête réalisée dans la correction pour avoir un exemple plus concret comment utiliser une requête préparée :
+Je te propose de voir la requête réalisée dans la correction pour avoir un exemple plus concret sur comment utiliser une requête préparée :
 
 ![img_11.png](./imagesFeedbacks/img_11.png)
 
@@ -97,13 +97,15 @@ J'ai pu voir que tu récupérais toutes les cartes grâce à la fonction `getEle
 
 ![img_15.png](./imagesFeedbacks/img_15.png)
 
+(Attention à la virgule après le `console.log`)
+
 Dans la correction, on effectue le "filtre", directement via notre requête SQL grâce à une clause WHERE :
 
 ![img_16.png](./imagesFeedbacks/img_16.png)
 
-Comme tu peux le voir, ici on construit notre requête préparée en fonction de si l'élément est NULL (c'est-à-dire qu'on que la carte n'a aucun élément) ou s'il y a une autre valeur.
+Comme tu peux le voir, ici on construit notre requête préparée en fonction de si l'élément est NULL (c'est-à-dire que la carte n'a aucun élément) ou s'il y a une autre valeur.
 
-Le résultat de la requête sera déjà **filtré** grâce à notre clause **WHERE**, ainsi on aura donc toutes les cartes que l'on souhaite et il n'est pas nécessaire d'effectuer un filtre en javascript. Comme tu peux le voir dans le controller de la correction :
+Le résultat de la requête sera donc déjà **filtré** grâce à notre clause **WHERE**, ainsi on aura donc toutes les cartes que l'on souhaite et il n'est pas nécessaire d'effectuer un filtre en JavaScript. Comme tu peux le voir dans le controller de la correction :
 
 ![img_17.png](./imagesFeedbacks/img_17.png)
 
@@ -112,7 +114,9 @@ Pourquoi effectuer le filtre directement via la requête ? Et bien pour plusieur
 - Les performances, le fait de trier les cartes directement en javascript peut être gourmand en ressources et donc impacter négativement les performances de l'application.
 - Toutes les données sont déjà présentes dans la base de données, ainsi il est beaucoup plus rapide d'effectuer le "filtre" dans la base de données directement et de traiter dans notre application uniquement les cartes dont on a besoin.
 - C'est beaucoup plus facile à maintenir !
-- Je t'invite à revoir le cours sur SQL et si tu as des questions n'hésites pas à me les poser !
+
+ 
+Je t'invite à revoir le cours sur SQL et si tu as des questions n'hésites pas à me les poser !
 
 ---
 ## Etape 3 : Construire un deck
